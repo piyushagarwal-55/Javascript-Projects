@@ -1,0 +1,226 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(28, 3, 255, 0.838) 0%, rgba(57, 2, 64, 0.838) 67%);
+    height: 80vh;
+    width: 100%;
+}
+
+#heding {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: chartreuse;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 2.5%;
+}
+
+#input {
+    display: flex;
+    margin-left: 21%;
+}
+
+#input h1,
+#inputfield,
+#button1,
+#button2 {
+    margin: 30px;
+    color: chartreuse;
+}
+
+#inputfield,
+#button1,
+#button2 {
+    color: black;
+    border: solid black 4px;
+}
+
+#inputfield {
+    margin-top: 40px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#button1,
+#button2 {
+    background-color: gold;
+    margin-top: 40px;
+    height: 40px;
+    width: 10%;
+    font-size: 20px;
+}
+
+#todolist {
+    color:blueviolet;
+    margin-left: 22.5%;
+    margin-top: 40px;
+}
+#todolist h1{
+    color: chartreuse
+}
+
+#todolist ol {
+    width: 50%;
+    margin: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+#todolist ol li {
+    background-color:bisque;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border:solid black 4px;
+    padding:10px
+}
+
+.delete {
+    position: absolute;
+    left: 350px;
+    width: 30%;
+    font-size: 30px;
+    background-color: gold;
+}
+
+/* Add responsiveness */
+@media (max-width: 1024px) {
+    #input {
+        margin-left: 10%; /* Adjust for smaller screens */
+    }
+
+    #inputfield {
+        width: 40%; /* Increase width for better visibility */
+    }
+
+    #button1,
+    #button2 {
+        width: 15%; /* Buttons are larger for easier tapping */
+    }
+
+    #todolist {
+        margin-left: 10%; /* Align list with reduced input margin */
+    }
+
+    #todolist ol li {
+        font-size: 25px; /* Smaller text for tablets */
+    }
+
+    .delete {
+        left: 200px;
+        font-size: 25px; /* Adjust for alignment */
+    }
+}
+
+@media (max-width: 768px) {
+    #input {
+        flex-direction: column; /* Stack input field and buttons */
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #inputfield {
+        width: 80%; /* Full width for smaller screens */
+    }
+
+    #button1,
+    #button2 {
+        width: 40%;
+        margin-top: 10px; /* Space between buttons */
+    }
+
+    #todolist {
+        margin-left: 5%; /* Align with smaller screens */
+    }
+
+    #todolist ol {
+        width: 90%; /* List takes most of the screen */
+    }
+
+    #todolist ol li {
+        font-size: 20px; /* Slightly smaller list items */
+    }
+
+    .delete {
+        left: 150px; /* Re-align delete button */
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #input h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #inputfield {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #button1,
+    #button2 {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    #todolist {
+        margin-left: 5%;
+    }
+
+    #todolist ol {
+        width: 100%;
+    }
+
+    #todolist ol li {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .delete {
+        left: auto;
+        margin-left: 20px; /* Inline with text for narrow screens */
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

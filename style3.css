@@ -1,0 +1,66 @@
+#nav_links a i {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+    #menutable tr {
+        width: 100%;
+        display: flex;
+       /* This ensures even spacing between columns */
+    }
+    
+      
+}
+@media screen and (max-width: 991px) {
+    #nav_links a ,  #nav_links button { 
+        display: none;
+    }
+
+    #media1{
+        display:inline-block; /* Show the icon inside #media1 */
+    }
+    
+    #c1{
+        position: relative;
+      
+        
+    }
+
+    #first_page{
+        height: 120vh;
+    }
+
+    #text_area p{
+        font-size: small;
+    }
+    #text_area h1{
+        font-size:larger;
+       
+    }
+    #heading{
+        padding-top: 130px;
+    }
+    #media1{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 30px;
+        height: 60px;
+        font-size:40px;
+        
+       margin: 30px;
+       z-index: 99999;
+    }
+
+    #methods{
+        flex-wrap: wrap; 
+        width: 100%;
+    }
+    #div1,#div2,#div3,#div4{
+        margin: 30px;
+        width: 35%;
+    }
+    
+}

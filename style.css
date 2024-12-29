@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+header {
+    position: absolute;  /* Make header position absolute */
+    top: 0;              /* Position it at the top */
+    left: 0;
+    width: 100%;        /* Ensure full width */
+    z-index: 1;         /* Bring header above #background */
+    background: transparent;  /* Transparent background to show content beneath */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Padding for better visibility */
+}
+
+#iname{
+    margin-right: 800px;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+/* Logo Image */
+#col1 img {
+    height: 60px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+/* Table Layout */
+table {
+    width: 100%;   /* Set to full width */
+    position: relative;  /* Relative positioning */
+}
+
+/* Col2 (Navigation and buttons) */
+#col2 {
+    margin-top: 10px;
+    display: flex;
+    margin-right: 100px;
+    justify-content: space-between; /* Add space between buttons */
+    align-items: center; /* Align buttons vertically */
+    gap: 20px;  /* Space between the buttons */
+}
+
+
+
+
+#col2 button {
+    color: black;
+    background-color: red;
+    padding: 10px 20px;  /* Padding inside buttons for better spacing */
+    border: none;
+    border-radius: 5px;  /* Optional: rounded corners */
+    font-size: 1rem;  /* Adjust button text size */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+}
+
+#col2 a {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;  /* Remove underlines from links */
+    padding: 10px 20px;  /* Padding inside links for spacing */
+    margin-left: 15px;  /* Add left margin if needed */
+}
+#col2 a:hover, #col2 button:hover {
+    background-color: darkred;  /* Hover effect for buttons and links */
+}
+#iname{
+    justify-content: end;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+/* Background and Cover Styling */
+#container {
+    position: relative;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    overflow-x: hidden;  /* Prevent container from overflowing horizontally */
+}
+
+#background {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cover2.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.3) sepia() hue-rotate(0deg) opacity(0.5);
+    filter: contrast(0.4);
+    z-index: -1;  /* Place it behind the header */
+}
+
+#blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 1, 62, 0.877);
+    background-size: cover;
+}
+
+/* Cover text */
+.covertext {
+    width: 700px;
+    max-width: 100%;  /* Prevent it from exceeding viewport width */
+    height: 900px;
+}
+
+.covertext h1 {
+    font-size: 400%;
+    padding-top: 200px;
+    padding-left: 30px;
+    color: rgb(3, 129, 238);
+}
+
+/* Overlay Image Animation */
+.overlay {
+    width: 700px;
+    height: 1000px;
+    max-width: 100%;  /* Prevent it from exceeding viewport width */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.overlay img {
+    margin-top: 100px;
+    margin-right: 40px;
+    position: relative;
+    height: 550px;
+    max-width: 100%;  /* Ensure image does not cause horizontal overflow */
+    animation: rotateCover1 100s linear infinite;
+}
+
+@keyframes rotateCover1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.covertext button{
+   background-color: gold;
+   height: 70px;
+   width: 200px;
+  font-size: x-large;
+   margin-top: 60px;
+   margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#first_page {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+
+    
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), 
+                url(images/cover2.jpg) no-repeat center/cover;
+
+}
+
+#nav_bar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    
+    display: inline-block;
+   
+    position: relative;
+}
+#nav_bar  h1 {
+    position: absolute;
+    left:120px;
+    display: inline-block;
+    color: lightgreen;
+    font-size: 40px;
+    top:17px;
+}
+
+#nav_bar #logo img{
+    position: absolute;
+     height: 60px;
+     width: 60px;
+     top:17px;
+     left:50px;
+     border-radius: 50%;   
+     display: inline-block;  
+}
+
+#nav_bar #nav_links{
+    position: absolute;
+    top:30px;
+    right:30px;
+    
+}
+
+#nav_links > a,#nav_links > button{
+  
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+#nav_links > button{
+    height:50px;
+    background-color: chartreuse;
+    color:black;
+   
+}
+#nav_links > button:hover{
+    background-color: red;
+    color:black;
+   
+}
+#nav_links > a:hover{
+    color:yellow
+}
+
+#content{
+    position: releative;
+    height:100vh;
+    width:100%;
+   
+}
+#content #rotate_image img {
+   
+    width: 650px; /* Reduce the width */
+    height: 650px; /* Reduce the height */
+}
+
+#nav_bar{
+    position: fixed;
+    z-index: 99;
+}
+
+#content #rotate_image {
+    position: absolute;
+    top: 150px; 
+    right: 20px; 
+}
+#content #text_area{
+    padding-left: 40px;
+    position: absolute;
+    width:50%;
+    top:200px;
+    color: aliceblue;
+
+}
+#content #text_area #heading{
+    font-size: 40px;
+}
+#content #text_area p{
+    
+    margin-top: 30px;
+}
+
+#content #text_area button{
+    margin-top:40px;
+    width:150px;
+    height:50px;
+    padding: 0px;
+    font-size: larger;
+    background-color: chartreuse;
+}
+
+#content #text_area button:hover{
+    color: brown;
+    background-color:red;
+}
+#nav_bar.scrolled {
+    background-color: #0f172B; /* Darker color when scrolled */
+    height: 80px; /* Shrink navbar height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+}

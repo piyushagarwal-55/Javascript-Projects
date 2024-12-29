@@ -1,0 +1,952 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+
+#first_page {
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    
+    flex-direction: column;
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), 
+                url(images/cover2.jpg) no-repeat center/cover;
+
+}
+
+#nav_bar{
+   
+    width: 100%;
+    height: 80px;
+    
+    display: inline-block;
+   
+    /* position: relative; */
+}
+#nav_bar  h1 {
+    position: absolute;
+    left:120px;
+    display: inline-block;
+    color: lightgreen;
+    font-size: 40px;
+    top:17px;
+}
+
+#nav_bar #logo img{
+    position: absolute;
+     height: 60px;
+     width: 60px;
+     top:17px;
+     left:50px;
+     border-radius: 50%;   
+     display: inline-block;  
+}
+
+#nav_bar #nav_links{
+    position: absolute;
+    top:30px;
+    right:30px;
+    
+}
+
+#nav_links > a,#nav_links > button{
+  
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+#nav_links > button{
+    height:50px;
+    background-color: chartreuse;
+    color:black;
+   
+}
+#nav_links > button:hover{
+    background-color: red;
+    color:black;
+   
+}
+#nav_links > a:hover{
+    color:yellow
+}
+
+#content{
+    display: flex;
+    height:100vh;
+    width:100%;
+   flex-direction: row;
+   align-items: center;
+   
+   flex-wrap: wrap;
+}
+#content #rotate_image img {
+   
+    width: 600px; /* Reduce the width */
+    height: 600px; /* Reduce the height */
+}
+
+#nav_bar{
+    position: fixed;
+    z-index: 99;
+}
+
+#content #rotate_image {
+    /* position: absolute; */
+    /* top: 150px; 
+    right: 20px;  */
+    padding-top: 140px;
+    margin-left: 80px;
+}
+#content #text_area{
+    padding-left: 40px;
+    /* position: absolute; */
+    width:50%;
+    /* top:200px; */
+    color: aliceblue;
+
+}
+#content #text_area #heading{
+    font-size: 40px;
+}
+#text_area h1{
+    font-size:larger;
+   
+}
+#content #text_area p{
+    
+    margin-top: 30px;
+}
+
+#content #text_area button{
+    margin-top:40px;
+    width:150px;
+    height:50px;
+    padding: 0px;
+    font-size: larger;
+    background-color: chartreuse;
+}
+
+#content #text_area button:hover{
+    color: brown;
+    background-color:red;
+}
+#nav_bar.scrolled {
+    background-color: #0f172B; /* Darker color when scrolled */
+    height: 80px; /* Shrink navbar height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+
+#methods{
+    display:flex;
+    flex-direction: row;
+     justify-content: space-evenly;
+     width: 100%;
+     /* height:50vh; */
+     
+     
+     
+}
+#div1,#div2,#div3,#div4{
+    margin: 50px;
+    width:23%;
+    height: auto;
+    border: black solid 5px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    word-wrap: wrap;
+}
+
+#div1 h1,#div2 h1,#div3 h1,#div4 h1{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+}
+#div1 h1 i,#div2 h1 i,#div3 h1 i,#div4 h1 i{
+    width:40%;
+   font-size: 40px;
+   justify-content: center;
+   align-items: center;
+   color: orange;
+}
+.method:hover{
+    
+    
+    background-color: rgb(255, 0, 0);
+    
+}
+/* About Section */
+#about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#about1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 10px; /* Adds spacing between images */
+}
+
+#about1 img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Restrict maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+}
+
+#about2 {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about2 > h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#about2 #welcome {
+    font-size: 25px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#about2 p {
+    
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#experince {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#about2 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+}
+
+#about2 button:hover {
+    background-color: red;
+}
+/* General Styles */
+#foodmenu {
+    padding: 50px 20px;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.food-menu {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-title {
+    font-family: 'Georgia', cursive;
+    font-size: 140%;
+    color: orange;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.menu-title::before,
+.menu-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+}
+
+.menu-title::before {
+    left: -60px;
+}
+
+.menu-title::after {
+    right: -60px;
+}
+
+.popular-items {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+    color: black;
+    margin: 0;
+}
+
+/* List Content Section */
+#list_content {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#list_content li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+#list_content li i {
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Complete Menu Table */
+#completemenu {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#menutable {
+    border: 2px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#menutable tr {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+}
+
+#menutable td {
+    width: 48%; /* Adjust width for responsiveness */
+    border-right: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#menutable td:last-child {
+    border-right: none;
+}
+
+.tabledatas img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 20px;
+    color: orangered;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    #list_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #list_content li {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #menutable tr {
+        flex-direction: column;
+    }
+
+    #menutable td {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    #menutable td:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-items {
+        font-size: 24px;
+    }
+
+    .menu-title {
+        font-size: 120%;
+    }
+
+    #menutable td {
+        padding: 10px;
+    }
+
+    .tabledatas img {
+        max-width: 150px;
+    }
+     
+    .text {
+        font-size: 18px;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    #foodmenu {
+        padding: 20px;
+    }
+
+    .menu-title::before,
+    .menu-title::after {
+        width: 30px;
+    }
+
+    .menu-title {
+        font-size: 100%;
+    }
+
+    .popular-items {
+        font-size: 20px;
+    }
+
+    .tabledatas img {
+        max-width: 120px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+}  
+
+/* General Container */
+.container {
+    display: flex;
+    flex-direction: row; /* Default: side-by-side */
+    height: 70vh;
+}
+
+/* Image Section */
+/* .image-section {
+    flex: 1;
+    background-image: url('your-image-url.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+} */
+
+/* Video Icon */
+/* .video-icon {
+   
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+  */
+
+.video-icon img {
+    width: 90%;
+    height: 65vh;
+    min-height: 55vh;
+    margin-left: 5%;
+    max-height: 65vh;
+} 
+
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    background-color: #031e40;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    width: 90%;
+    height: 65vh;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.book-now {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now:hover {
+    background-color: darkorange;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets (between 991px and 768px) */
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column; /* Stack vertically */
+        height: auto; /* Adjust height */
+    }
+
+    .image-section {
+        height: 300px; /* Fixed height for the image section */
+    }
+
+    .form-section {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .book-now {
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .image-section {
+        height: 250px;
+    }
+    .video-icon img {
+        display: none;
+        width: 90%;
+        height: auto;
+        
+        min-height: 0px;
+        margin-left: 5%;
+    } 
+
+    .form-section {
+        padding: 20px;
+        
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    input, select, textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .book-now {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 480px) {
+    .image-section {
+        height: 200px;
+    }
+
+    .video-icon img {
+        width: 40px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    input, select, textarea {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .book-now {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+.team-players {
+    text-align: center; /* Center align everything */
+    margin-top: 80px; /* Adds space above */
+    font-family: 'Arial', sans-serif; /* Fallback font */
+  }
+  
+  /* Style for 'Teaming Team' with decorative lines */
+  .teaming-team {
+    font-family: 'Georgia', cursive; /* Cursive font */
+    font-size: 24px; /* Font size for 'Teaming Team' */
+    color: orange; /* Text color */
+    font-style: italic; /* Italicize the text */
+    position: relative;
+    display: inline-block; /* Keeps the lines aligned */
+    margin-bottom: 10px;
+  }
+  
+  .teaming-team::before,
+  .teaming-team::after {
+    content: ""; /* Adds decorative lines */
+    position: absolute;
+    top: 50%;
+    width: 50px; /* Length of the lines */
+    height: 2px; /* Thickness of the lines */
+    background-color: orange;
+  }
+  
+  .teaming-team::before {
+    left: -60px; /* Position to the left */
+  }
+  
+  .teaming-team::after {
+    right: -60px; /* Position to the right */
+  }
+  
+  /* Style for 'Masterchefs' */
+  .masterchefs {
+    font-family: 'Arial Black', sans-serif; /* Bold font */
+    font-size: 32px; /* Large font size */
+    color: black; /* Text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  #infoaboutchefs {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#member1, #member2, #member3, #member4 {
+    border: 1px whitesmoke solid;
+    background-color: #f5f5f5;
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Smooth animation on hover */
+}
+
+/* Hover effect on individual members */
+#member1:hover, #member2:hover, #member3:hover, #member4:hover {
+    height: 450px; /* Increase height on hover */
+    background-color: orange; /* Change background color */
+    transform: scale(1.1); /* Scale up the entire card */
+}
+
+/* Style the images */
+#member1 img, #member2 img, #member3 img, #member4 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; /* Smooth animation for the image */
+}
+
+/* Hover effect for images */
+#member1:hover img, #member2:hover img, #member3:hover img, #member4:hover img {
+    width: 320px; /* Increase size on hover */
+    height: 320px;
+}
+
+/* Style the text */
+#member1 h1, #member2 h1, #member3 h1, #member4 h1 {
+    margin-left: 20px;
+    transition: font-size 0.3s ease-in-out; /* Smooth animation for text */
+}
+
+/* Hover effect for text */
+#member1:hover h1, #member2:hover h1, #member3:hover h1, #member4:hover h1 {
+    font-size: 28px; /* Increase text size on hover */
+}
+
+
+  .testimonial {
+    text-align: center; /* Center align everything */
+    margin-top: 70px; /* Adds space above */
+    font-family: 'Arial', sans-serif; /* Fallback font */
+  }
+  
+  /* Style for 'Teaming Team' with decorative lines */
+  .quote {
+    font-family: 'Georgia', cursive; /* Cursive font */
+    font-size: 24px; /* Font size for 'Teaming Team' */
+    color: orange; /* Text color */
+    font-style: italic; /* Italicize the text */
+    position: relative;
+    display: inline-block; /* Keeps the lines aligned */
+    margin-bottom: 10px;
+  }
+  
+  .quote::before,
+  .quote::after {
+    content: ""; /* Adds decorative lines */
+    position: absolute;
+    top: 50%;
+    width: 50px; /* Length of the lines */
+    height: 2px; /* Thickness of the lines */
+    background-color: orange;
+  }
+  
+  .quote::before {
+    left: -60px; /* Position to the left */
+  }
+  
+  .quote::after {
+    right: -60px; /* Position to the right */
+  }
+  
+  /* Style for 'Masterchefs' */
+  .clients {
+    font-family: 'Arial Black', sans-serif; /* Bold font */
+    font-size: 32px; /* Large font size */
+    color: black; /* Text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+
+  #container3{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #con1,#con2,#con3{
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 30px;
+  }
+
+  .details{
+    display: flex;
+    align-items: center;
+    
+  }
+  .details img{
+    margin:20px;
+    border-radius: 50%;
+  }
+
+  #con1:hover,#con2:hover,#con3:hover{
+    background-color: orange;
+  }
+
+
+  #scroller {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 0px; /* Example height for the container */
+    background-color: lightgray; /* Optional for visibility */
+}
+
+.s1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Background color of the div */
+    border-radius: 50%; /* Makes the div circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    border:orange solid 4px;
+}
+
+/* Positioning each .s1 element uniquely */
+.s1:nth-child(1) {
+    top: -40px;
+    left: 45%;
+}
+
+.s1:nth-child(2) {
+    top: -40px;
+    left: 48%;
+}
+
+.s1:nth-child(3) {
+    top: -40px;
+    left: 52%;
+}
+
+.s1:nth-child(4) {
+    top: -40px;
+    left: 55%;
+}
+
+
+
+
+/* html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        } */
+
+        /* Footer styles */
+        .footer { 
+            margin-top: 100px;
+            height: 70vh; 
+            background-color: #00306f; /* Dark Blue Color */  
+            color: white;  
+            padding-left: 20px;  
+            padding-right: 20px;  
+            padding-top: 20px;  
+        }  
+
+        .container {  
+            display: flex;  
+            padding-top: 80px;  
+            justify-content: space-between;  
+            flex-wrap: wrap;  
+        }  
+
+        .footer-section {  
+            flex: 1;  
+            margin: 10px;  
+        }  
+
+        h3 {  
+            color: orange; /* Header Color */  
+            margin-bottom: 15px;  
+        }  
+
+        ul {  
+            list-style: none;  
+        }  
+
+        li {  
+            margin: 10px 0;  
+        }  
+
+        a {  
+            color: white;  
+            text-decoration: none;  
+        }  
+
+        a:hover {  
+            text-decoration: underline;  
+        }  
+
+        .social-icons {  
+            display: flex;  
+            gap: 10px;  
+        }  
+
+        input[type="email"] {  
+            padding: 10px;  
+            border-radius: 5px;  
+            border: none;  
+            margin-right: 10px;  
+        }  
+
+        button {  
+            padding: 10px 15px;  
+            background-color: orange;  
+            color: white;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+        }  
+
+        button:hover {  
+            background-color: darkorange;  
+        }  
+
+        .footer-bottom { 
+            justify-content: center;
+            color: black; 
+            text-align: center;  
+            /* margin-top: 20px;   */
+        }

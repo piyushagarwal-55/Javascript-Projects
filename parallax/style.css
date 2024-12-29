@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+ }
+#A1{
+    height:100vh;
+    width: 100%;
+    background-image: url(images/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 250px;
+    
+
+}
+
+#A1 h1{
+    padding: auto;
+    margin: auto;
+   color: white;
+   /* margin-left: 600px; */
+
+   text-align: center;
+   /* padding-top: 10px; */
+   background-color: black;
+   height: 200px;
+   width: 850px;
+   font-size: 100px;
+   
+}
+#A2{
+    background-color: bisque;
+    width:100%;
+    height:200px;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+#A2 h1{
+    
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+#A2 p{
+    word-spacing: 1px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+   
+}
+#B1{
+    height:100vh;
+    width: 100%;
+    background-image: url(images/image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 250px;
+    
+
+}
+
+#B1 h1{
+   color: white;
+   /* margin-left: 600px; */
+   margin: auto;
+   text-align: center;
+   padding: auto;
+   background-color: black;
+   height: 200px;
+   width: 850px;
+   font-size: 100px;
+   
+}
+#B2{background-color: bisque;
+    width:100%;
+    height:200px;
+    padding: 30px;
+    padding-top: 20px;
+}
+#B2 h1{
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+}
+#B2 p{
+    word-spacing: 1px;
+    letter-spacing: 1.2px;
+    
+    text-align: justify;
+}
+
+#C1{
+    height:100vh;
+    width: 100%;
+    background-image: url(images/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 250px;
+   
+
+}
+
+#C1 h1{
+   color: white;
+   /* margin-left: 600px; */
+   margin: auto;
+   padding: auto;
+   text-align: center;
+ 
+   background-color: black;
+   height: 200px;
+   width: 850px;
+   font-size: 100px;
+   
+}
+#C2{background-color: bisque;
+    width:100%;
+    height:200px;
+    padding: 30px;
+    padding-top: 20px;
+}
+#C2 h1{
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+}
+#C2 p{
+    word-spacing: 1px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+/* #A{
+    height:140vh;
+     width: 100%;
+} */
